@@ -1,24 +1,7 @@
+const util = require("./util");
+
 // Building the native version (copying files)
-const fs = require("fs");
-const path = require("path");
+util.copyRecursiveSync("Native", "public/Native");
 
-const copyRecursiveSync = (src, dest) => {
-	const exists = fs.existsSync(src);
-	const stats = exists && fs.statSync(src);
-	const isDirectory = exists && stats.isDirectory();
-	if (isDirectory) {
-		try {
-			fs.mkdirSync(dest);
-		}
-		catch {}
-		
-		fs.readdirSync(src).forEach(function(childItemName) {
-		copyRecursiveSync(path.join(src, childItemName),
-							path.join(dest, childItemName));
-		});
-	} else {
-		fs.copyFileSync(src, dest);
-	}
-};
-
-copyRecursiveSync("Native", "public/Native");
+// Building the alpihe version (copying files)
+util.copyRecursiveSync("Alpine", "public/Alpine");
