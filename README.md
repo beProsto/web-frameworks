@@ -15,4 +15,6 @@ Because they're different. Looking all around for other better frameworks (to wh
 
 Project overview:
 - Make a 3 page app, showing a:
-  1. Welcome back screen, showing your "username".
+  1. Welcome back page, showing your "username" (showing Welcome to a "new" user).
+  2. A "login" page, letting you register or login.
+  3. A "settings" page, letting you customise the look of the website, showing how long you were a user for, change your username.
