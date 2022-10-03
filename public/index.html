@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Different Frameworks</title>
+
+	<style>
+		body {
+			background-color: #303030;
+			color: aliceblue;
+			font-family: 'Courier New', Courier, monospace;
+
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.content {
+			min-width: 0px;
+		}
+		.background {
+			z-index: -1;
+			position: fixed;
+			left: 0%; top: 0%;
+			width: 100%; height: 100%;
+
+			background-image: url("./back.png");
+  			background-size: cover;
+		}
+		.fw-list {
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: center;
+		}
+		.fw img {
+			width: 100%;
+		}
+		.fw {
+			background-color: #fff;
+			padding: 5px;
+			margin: 5px;
+			border-radius: 20px;
+			border: black 5px solid;
+			width: 90px;
+		}
+		.nick {
+			color: aquamarine;
+		}
+		.one-liner {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.one-liner h3 {
+			flex: 1;
+		}
+		.left {
+			text-align: left;
+		}
+		.right {
+			text-align: right;
+		}
+	</style>
+</head>
+<body>
+	<div class="background"></div>
+
+	<div class="content">
+		<h1>Different Frameworks</h1>
+	
+		<h2>How different web frameworks/libraries compare.</h2>
+	
+		<h2>Check out how the exact same app looks like in:</h2>
+	
+		<div class="fw-list">
+			<div class="fw"><a href="./Native"><img src="./native.png" alt="Native's Logo"></a></div>
+			<div class="fw"><a href="./React"><img src="./react.png" alt="React's Logo"></a></div>
+			<div class="fw"><a href="./Svelte"><img src="./svelte.png" alt="Svelte's Logo"></a></div>
+			<div class="fw"><a href="./Alpine"><img src="./alpine.png" alt="Alpine's Logo"></a></div>
+		</div>
+		
+		<div class="one-liner">
+			<h3 class="left">Made by <a class="nick" href="https://beprosto.github.io/">beProsto</a></h3>
+			<h3 class="right">Check out on <a class="nick" href="https://github.com/beProsto/web-frameworks/">GitHub</a></h3>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<!-- I noticed there's no logo publicly available, so i did this out of the one from their docs https://alpinejs.dev/start-here -->
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="512px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512px" viewBox="5 0 190 100">
+    <g id="Custom-Preset-4-Copy-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-4" transform="translate(0.000000, 12.000000), scale=(2.0, 2.0)">
+            <polygon id="Path" fill="#77C1D2" points="149.520377 10.3027772 189.392477 50 149.520377 89.6972228 109.648276 50"/>
+            <polygon id="Path" fill="#2D3441" points="49.8401255 10.3027772 132.499974 92.6000822 52.7557729 92.6000822 9.96802511 50"/>
+        </g>
+    </g>
+</svg>
